@@ -36,4 +36,5 @@
     right: 20px;
     width: 30px; /* Ensure no conflicting styles */
     cursor: pointer;
+    border: 0.5px solid;
 }

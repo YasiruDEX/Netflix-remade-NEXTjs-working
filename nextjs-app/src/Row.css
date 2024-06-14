@@ -1,0 +1,104 @@
+.row {
+    color: white;
+    margin-left: 20px;
+}
+
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__poster {
+    object-fit: contain;
+    width: 200px;
+    max-height: 200px;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row--fadebottom:hover + .row__poster,
+.row__poster:hover {
+    /* transform: scale(1.08); */
+    opacity: 1;
+    filter: brightness(1.5); /* Adjust the value as needed */
+}
+
+.row__posterLarge {
+    max-height: 250px;
+    object-fit: contain;
+    width: 170px;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+
+.row__bucket:hover .row__posterLarge {
+    opacity: 1;
+    filter: brightness(1.1); /* Adjust the value as needed */
+}
+
+.row--fadebottom {
+    height: 6rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+
+.row__title {
+    padding-left: 15px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    max-width: 150px;
+    font-size: 13px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.row__bucket:hover .row__title {
+    opacity: 0.8;
+}
+
+.row__bucket:hover .row--fadebottom{
+    height: 6rem;
+    /* transform: scale(1.2); */
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.61), #111);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.row__bucket {
+    position: relative;
+    color: white;
+    transition: transform 450ms;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.row__bucket:hover {
+    transform: scale(1.09);
+}
+
+.row > h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 20px;
+    color: white;
+    z-index: 2;
+}

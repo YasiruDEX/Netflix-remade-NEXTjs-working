@@ -1,0 +1,9 @@
+.movieScreen {
+    height: 100vw;
+}
+
+.movieScreen__spacing {
+    margin-top: 20px;
+    background-color: black;
+    color: black;
+}

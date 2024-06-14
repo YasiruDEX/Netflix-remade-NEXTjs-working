@@ -1,0 +1,111 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url(
+    "https://assets.nflxext.com/ffe/siteui/vlv3/cacfadb7-c017-4318-85e4-7f46da1cae88/bbae3978-708b-4765-8bc5-c650c36fb965/LK-en-20240603-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+  );
+  background-size: cover;
+  
+}
+
+.loginScreen__logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.loginScreen__button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.loginScreen__gradient {
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+.loginScreen__body {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    left: 50%; /* Move the left edge of the element to the center of the parent */
+    transform: translateX(-50%); /* Move it back by half of its width */
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    color: white;
+}
+ 
+
+.loginScreen__body > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}   
+
+.loginScreen__body > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.loginScreen__body > h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+.loginScreen__input > form > input {
+    width: 30%;
+    height: 30px;
+    outline-width: 0;
+    padding: 10px;
+    border: none;
+    max-width: 600px;
+
+}
+
+.loginScreen__input {
+    margin-top: 20px;
+}
+
+.loginScreen__getStarted  {
+    padding: 15.9px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+}
+
+.loginScreen__button:hover {
+    background-color: #ff0a16;
+}
+
+
